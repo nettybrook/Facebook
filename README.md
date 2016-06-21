@@ -32,11 +32,12 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='AB_HW_Week5_FBAnim.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/nettybrook/Facebook/blob/master/Facebook/AB_HW_Week5_FBAnim.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
+Describe any challenges encountered while building the app.
 
 * Any libraries or borrowed content.
