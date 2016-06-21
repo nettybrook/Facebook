@@ -8,18 +8,28 @@
 
 import UIKit
 
-class PhotoViewController: UIViewController {
+class PhotoViewController: UIViewController, UIScrollViewDelegate {
 
     var photoImage: UIImage!
     var imageTransition: ImageTransition!
 
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var photoImageView: UIImageView!
 
+    @IBOutlet weak var mainView: UIView!
+    
+    @IBOutlet weak var doneImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        scrollView.delegate = self
         photoImageView.image = photoImage
+        
+        scrollView.contentSize = CGSize(width: 320, height: 1000)
+        mainView.backgroundColor = UIColor(white: 0, alpha: 1)
+
 
         // Do any additional setup after loading the view.
     }
@@ -30,7 +40,43 @@ class PhotoViewController: UIViewController {
     }
     
     @IBAction func onTapDone(sender: AnyObject) {
+        
         dismissViewControllerAnimated(true, completion: nil)
+        
+     
+    }
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        
+        UIView.animateWithDuration(0.2) { () -> Void in
+            self.mainView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+            self.doneImageView.alpha = 0
+        }
+        
+    }
+
+    func scrollViewDidEndDragging(scrollView: UIScrollView,
+        willDecelerate decelerate: Bool) {
+            
+            UIView.animateWithDuration(0.2) { () -> Void in
+                self.mainView.backgroundColor = UIColor(white: 0, alpha: 1)
+                self.doneImageView.alpha = 1
+            }
+            if (scrollView.contentOffset.y < 1) {
+                print("Im registering the offset")
+               
+                dismissViewControllerAnimated(true, completion: nil)
+   
+            }
+
+
+    
+    
+        // This method is called when the scrollview finally stops scrolling.
+    }
+    
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+        return photoImageView
     }
 
     /*
