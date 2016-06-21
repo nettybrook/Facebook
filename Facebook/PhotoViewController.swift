@@ -62,7 +62,7 @@ class PhotoViewController: UIViewController, UIScrollViewDelegate {
                 self.mainView.backgroundColor = UIColor(white: 0, alpha: 1)
                 self.doneImageView.alpha = 1
             }
-            if (scrollView.contentOffset.y < 1) {
+            if (scrollView.contentOffset.y < -90) {
                 print("Im registering the offset")
                
                 dismissViewControllerAnimated(true, completion: nil)
