@@ -28,6 +28,7 @@ class PhotoViewController: UIViewController, UIScrollViewDelegate {
         photoImageView.image = photoImage
         
         scrollView.contentSize = CGSize(width: 320, height: 1000)
+        
         mainView.backgroundColor = UIColor(white: 0, alpha: 1)
 
 

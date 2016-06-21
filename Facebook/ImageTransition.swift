@@ -33,7 +33,8 @@ override func presentTransition(containerView: UIView, fromViewController: UIVie
     //3. this makes the sizes match (to start)
     movingImageView.frame = feedViewController.selectedImageView.frame
     
-    movingImageView.center = feedViewController.selectedImageView.center
+    movingImageView.frame.origin.x = feedViewController.selectedImageView.frame.origin.x
+    
     movingImageView.center.y = feedViewController.selectedImageView.center.y
 //    newlyCreatedFace.center = imageView.center
 //    newlyCreatedFace.center.y += trayView.frame.origin.y
@@ -43,6 +44,7 @@ override func presentTransition(containerView: UIView, fromViewController: UIVie
     
     // Adding movingimage as a subview
     containerView.addSubview(movingImageView)
+    
     
     
     
