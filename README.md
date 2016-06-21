@@ -31,7 +31,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/nettybrook/Facebook/blob/master/Facebook/AB_HW_Week5_FBAnim.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/nettybrook/Facebook/5b96bf3ecee041e9f840115f7a016fa194ed2bc7/Facebook/AB_HW_Week5_FBAnim.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
