@@ -15,18 +15,17 @@ Time spent: `<Number of hours spent>`
 
 #### Optional
 
-- [ ] The full screen photo should be zoomable.
+- [x] The full screen photo should be zoomable.
 - [ ] The user should be able to page through the other photos in full screen mode.
 
 #### The following **additional** features are implemented:
 
 - [x] List anything else that you can get done to improve the app functionality!
-I tried to make the photos zoomable. Can you test? I could not find info and enabling zoom in xcode simulator view.
+I tried to make the photos zoomable. Can you test? I could not find info and enabling zoom in xcode simulator view. IGNORE ...I found instructions and see that I did enable it...hence this update.
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. Aligning the movingImage with the original  
 
 ### Video Walkthrough 
 
